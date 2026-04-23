@@ -311,53 +311,61 @@ Preencha todas as seções de forma clara e objetiva.
 
 **Exemplo:**
 
-👤 Identificação: **Nome Completo:**
+👤 Identificação: **Nome Completo: Esdras Rodrigues de Andrade**
 
 
-### 1️⃣ Resumo da Arquitetura do Modelo
+# Edge AI - Classificação de Dígitos (MNIST)
 
-Descreva, em palavras, a arquitetura da **CNN** implementada no arquivo
-`train_model.py`.
+##  Descrição do Projeto
 
+Este projeto implementa um pipeline completo de **Edge AI** para classificação de dígitos manuscritos utilizando o dataset MNIST.
 
+O objetivo é desenvolver um modelo leve, eficiente e compatível com dispositivos embarcados, incluindo sua otimização com TensorFlow Lite.
 
-### 2️⃣ Bibliotecas Utilizadas
+---
 
-Liste as principais bibliotecas utilizadas no projeto, preferencialmente
-com suas versões.
+## Etapas do Projeto
 
+O pipeline foi dividido em duas etapas principais:
 
+### 1. Treinamento do Modelo
+- Utilização de uma CNN (Rede Neural Convolucional)
+- Dataset: MNIST (dígitos de 0 a 9)
+- Normalização dos dados para melhor desempenho
+- Treinamento por 5 épocas
+- Salvamento do modelo em formato `.h5`
 
-### 3️⃣ Técnica de Otimização do Modelo
+### 2. Otimização para Edge AI
+- Conversão do modelo para TensorFlow Lite
+- Aplicação de **Dynamic Range Quantization**
+- Redução do tamanho do modelo
+- Preparação para execução em dispositivos com baixo poder computacional
 
-Explique qual técnica foi utilizada para otimizar o modelo no arquivo
-`optimize_model.py`.
+---
 
+## 🧠 Arquitetura do Modelo
 
+A arquitetura foi projetada para ser leve e eficiente:
 
-### 4️⃣ Resultados Obtidos
+- Conv2D (32 filtros, ReLU)
+- MaxPooling2D
+- Conv2D (64 filtros, ReLU)
+- MaxPooling2D
+- Flatten
+- Dropout (0.3)
+- Dense (10 classes, Softmax)
 
-Informe o principal resultado obtido após o treinamento do modelo.
+---
 
+## 📊 Resultados
 
+- Acurácia no conjunto de teste: **~98%**
+- Modelo funcional e otimizado para Edge AI
 
-### 5️⃣ Comentários Adicionais (Opcional)
+---
 
-Utilize este espaço para comentar:
-- Dificuldades encontradas  
-- Decisões técnicas importantes  
-- Limitações do modelo  
-- Aprendizados durante o desafio
+## 📦 Requisitos
 
-
-## 🆘 Suporte
-
-Em caso de dúvidas:
-
-- Consulte o material dos cursos EAD
-- Leia atentamente este README
-- Analise os logs das GitHub Actions
-- Utilize os canais oficiais para contato com os instrutores
-
-Boa sorte no processo seletivo.
-****
+```bash
+tensorflow>=2.12
+numpy
