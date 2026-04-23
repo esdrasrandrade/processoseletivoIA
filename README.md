@@ -311,7 +311,7 @@ Preencha todas as seções de forma clara e objetiva.
 
 **Exemplo:**
 
-👤 Identificação: **Nome Completo: Esdras Rodrigues de Andrade**
+👤 Identificação - **Nome Completo: Esdras Rodrigues de Andrade**
 
 
 # Edge AI - Classificação de Dígitos (MNIST)
@@ -343,7 +343,7 @@ O pipeline foi dividido em duas etapas principais:
 
 ---
 
-## 🧠 Arquitetura do Modelo
+## Arquitetura do Modelo
 
 A arquitetura foi projetada para ser leve e eficiente:
 
