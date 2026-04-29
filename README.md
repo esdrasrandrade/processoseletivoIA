@@ -1,6 +1,6 @@
 # Processo Seletivo – Intensivo Maker | AI
 
-👤 Identificação - **Nome Completo: Esdras Rodrigues de Andrade**
+👤 Identificação - **Esdras Rodrigues de Andrade**
 
 
 # Edge AI - Classificação de Dígitos (MNIST)
